@@ -18,3 +18,12 @@ EXPOSE 8888
 
 # Rodar o Jupyter Notebook automaticamente
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root", "--no-browser"]
+
+#passo a passo
+#cd .\projeto\  
+#docker build -t projeto_simulacao . 
+# docker run -p 8888:8888 -v "${PWD}:/app" --name serieTemporalDiadema.ipynb projeto_simulacao
+
+#como matar um container que ja ta rodando
+#docker ps -a   
+#docker rm [id do conteiner]   
